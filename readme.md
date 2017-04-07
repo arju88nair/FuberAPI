@@ -1,4 +1,4 @@
-# Fuber
+## Fuber
 A RESTful API service similar to a cab booking service with user registration,driver registration,booking and fare calculation.
 
 
@@ -23,5 +23,11 @@ Includes:-
 
 ·  A bootstrapped front end with filtering capabilities for the total cars available.
 
-
-
+## Dev Setup
+* Install Composer and Laravel (Check Laravel Docs)
+* Clone project: `git clone [project-git-url]`
+* Install dependencies: `composer install`
+* Create your `.env` file and use `.env.example` to configure the settings
+* Create a database and put the name also into the `.env` file
+* Run migrations to create the tables in the database: `php artisan migrate`
+* Run dev server: `php artisan serve`
