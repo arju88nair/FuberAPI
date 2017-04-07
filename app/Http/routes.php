@@ -21,7 +21,4 @@ Route::post('fare','bookingController@fare' );
 
 Route::get('view',"userController@view");
 
-
-
-
-
+Route::get('/',"userController@view");

@@ -23,6 +23,7 @@ class users extends Model
 		$uId=$model->uId=md5(uniqid(rand(), true));
 		$dt = new DateTime;
 		$model->created_at = $dt->format('Y-m-d H:i:s');
+		$model->updated_at = $dt->format('Y-m-d H:i:s');
 		$isSaved=$model->save();
 
 		if($isSaved)
@@ -33,7 +34,7 @@ class users extends Model
 
 
 		}
-		
+
 		return response(array('code' => '1', "status" => "failure", 'statusCode' => 501, 'message' => 'Try again'))->header('Content-Type', 'application/json');
 	}
 
